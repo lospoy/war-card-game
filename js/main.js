@@ -19,7 +19,7 @@ fetch('https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1')
 
 //Draw cards and game logic      
 function getFetch(){
-  const url = `https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=52`
+  const url = `https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=2`
 
   fetch(url)
       .then(res => res.json()) // parse response as JSON
