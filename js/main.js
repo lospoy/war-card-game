@@ -81,6 +81,7 @@ function declareWinner() {
   document.querySelector('h3').innerText = winner
   document.querySelector('h3').style.fontSize = 'clamp(4rem, 10vw, 8rem)'
   document.querySelector('h3').style.margin = '0, auto'
+  document.querySelector('h3').style.fontFamily = '"Open Sans", sans-serif'
   document.querySelector('.player-area').style.display = 'none'
   document.querySelector('.again').style.display = 'block'
 }
