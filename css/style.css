@@ -1,0 +1,108 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  }
+
+body {
+  background: rgb(79,79,79);
+  background: radial-gradient(circle, rgba(79,79,79,1) 21%, rgba(57,57,57,1) 100%);
+  font-size: 62.5%;
+  color: azure;
+  height: 100vh;
+  }
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: clamp(.8rem, 2.5vw, 3rem);
+  margin-top: 2vh;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: clamp(1rem, 5vw, 4rem);
+  margin-top: 3vh;
+  font-weight: 700;
+}
+
+button {
+  font-size: clamp(1rem, 3vw, 3rem);
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  border: 2px solid rgb(100, 155, 18);
+  border-radius: clamp(.5rem, 1vw, 4rem);
+  padding: .4rem 1rem;
+  font-weight: 700;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.game {
+  border: clamp(.5rem, 1vw, 4rem) groove #649b12;
+  border-radius: 1.5rem;
+  height: clamp(22rem, 60vw, 50rem);
+  width: clamp(20rem, 50vw, 50rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  background: rgb(161,228,60);
+  background: radial-gradient(circle, rgba(161,228,60,1) 21%, rgba(74,119,8,1) 100%);
+  box-shadow: 0vw 0vw 8vw 3vw rgba(255, 255, 255, 0.247);
+}
+  
+/******************************************
+/* CARDS
+/*******************************************/
+
+#player1, #player2 {
+  padding-top: 2vh;
+  width: clamp(8rem, 20vw, 20rem);
+  z-index: 1;
+}
+
+.card-area {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.player-area {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4vh;
+}
+
+.again-wrap {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2vh;
+}
+
+.again {
+  display: none;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Simple card game written in JavaScript">
+    	<meta name="keywords" content="card game">
+
+		<title>War! Card Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Kolker+Brush&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+    <div class="wrapper">
+      <div class="game">
+		    <button type="button" name="button" class="draw">Draw Cards</button>
+        <h3></h3>
+
+        <div class="card-area">
+        <section class="sec-p1">
+		      <img id='player1' src="" alt="">
+        </section>
+        <section class="sec-p2">
+		      <img id='player2' src="" alt="">
+          
+        </section>
+        </div>
+        <div class="player-area">
+          <h2 id="player1Score">Player 1</h2>
+          <h2 id="player2Score">Player 2</h2>
+        </div>
+      </div>
+      <div class="again-wrap">
+        <button class="again">Play Again</button>
+      </div>
+    </div>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
